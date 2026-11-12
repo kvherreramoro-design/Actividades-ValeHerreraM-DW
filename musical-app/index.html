@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con 
+un documento de HTML-->
+
+<html lang="es"> <!--Aquí inicia mi página con la etiqueta de html-->
+<head><!--Aquí en el head está todo lo que no es visible en la página pero lo hace funcional-->
+  <!--Con los metadatos puedo colcoar caracteres especiales, dar información al SEO para posicionamiento web-->
+  <meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical para navidad">
+  <meta name="author" content="Valentina Herrera">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
 <title>Musical Vale</title>
 </head>
 <body>
 
-<h1>Musical Vale</h1>
-<p>Escucha mis tres canciones de pop</p>
+  <div class="container-musical">  
+    <img src="navidad.jpg" alt="Imagen de musical app" class="Imagen">
+
+    <h1>Musical Valentina</h1>
+    <p class="pmusical">Musical para navidad</p>
+    <p>Escucha mis tres canciones navideñas</p>
+    
+    <div class="lista-canciones">
+      <!--CANCION 1--> 
+      <div class="canciones">
+        <p>1. 💝take me home</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Olivia Rodrigo - take me home (4 christmas) (64k).mp3" type="audio/mpeg">
+                </audio>
+      </div>
+
+      <!--CANCION 2--> 
+      <div class="canciones">
+        <p>2. ⛄is it new years yet</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Sabrina Carpenter - is it new years yet_ (Lyric Video) (64k).mp3" type="audio/mpeg">
+                </audio>
+      </div>
+
+      <!--CANCION 3--> 
+      <div class="canciones">
+        <p>3.🎄Christmas Tree Farm</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Taylor Swift - Christmas Tree Farm (64k).mp3">
+                </audio>
+      </div>
 
 </body>
 </html>
